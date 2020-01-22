@@ -19,3 +19,4 @@ install:
 
 script: 
   - R -e "rstan::stan_version()"
+  
