@@ -5,4 +5,8 @@ install:
   - R -e "install.packages('testthat')"
   - R -e "install.packages('rsample')"
 
+script:
+  - Rscript "library('rsample')"
+  - Rscript "library('testthat')"
+
   
