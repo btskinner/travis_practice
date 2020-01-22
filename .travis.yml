@@ -2,11 +2,11 @@ language: r
 cache: packages
 
 install:
-  - R -e "install.packages('testthat')"
-  - R -e "install.packages('rsample')"
+  - Rscript -e "install.packages('testthat')"
+  - Rscript -e "install.packages('rsample')"
 
 script:
-  - Rscript "library('rsample')"
-  - Rscript "library('testthat')"
+  - Rscript -e "library('rsample')"
+  - Rscript -e "library('testthat')"
 
   
