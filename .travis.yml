@@ -1,4 +1,5 @@
 language: r
+cache: packages
 
 addons:
   apt:
@@ -16,7 +17,9 @@ before_install:
 
 install: 
   - R -e "install.packages('rstan')"
+  - R -e "install.packages('rstanarm')"
 
 script: 
   - R -e "rstan::stan_version()"
+  - R -e "library(rstanarm)"
   
